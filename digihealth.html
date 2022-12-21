@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/website.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body">
+  <div class="nav">
+    <a href="website.html"class="navbar" >HOME</a>
+    <a href="website.html#about" class="navbar">ABOUT</a>
+    <a href="website.html#skills" class="navbar">SKILLS</a>
+    <a href="website.html#projects" class="navbar">PROJECTS</a>
+    <a href="website.html#contacts" class="navbar">CONTACT</a>
+</div>
+    <div>
+        <h1>Digital Health Booklet</h1>
+  
+        <h2>Introduction of the app</h2>
+        <p>
+          Each child in Singapore receives a physical book for recording child
+          data about growth, vaccinations and medical details of the child. The
+          health digi Health book App provides a digital solution for storing,
+          viewing, editing, and updating this information that can be kept and
+          grow with the child. DigiHealth provides a way to never leave behind
+          your health booklet and displays the data entered to track your childs
+          growth and development
+        </p>
+  
+        <h2>Future Direction</h2>
+        <p>
+          The developers envisioned the app to be able to find clinics near by,
+          searching by postcode, enable push notifications for upcoming
+          appointments. Future applications may be to include the government
+          (local) specified vaccination scheme and use the digiHealth book to
+          record each child's vaccination history.
+        </p>
+  
+        <h2>
+          Explanations of the technologies used
+        </h2>
+  
+        <p>
+          The frontend of the project is done using React. For the backend
+          development , a few technologies are used.
+        </p>
+        <br>
+        <h3>1. Express </h3>
+        <p>
+          Create the routes for the input and retrieval of data from the DB.
+        </p>
+  
+        <h3>2. MongoDB</h3>
+        <p>
+          To store the information for the database of the project.
+        </p>
+  
+        <h2>General Approach for the project</h2>
+        <p>
+          The project is split up to 2 different job scope, frontend and backend.
+          Two teammates are assigned to do the frontend usign and one does the
+          routes for the backend development.
+        </p>
+        <p>
+
+          After that, it is linked up to provide both the frontend and backend for
+          a full stack development.
+        </p>
+        <h3>Frontend Component Model</h3>
+        <img src="https://i.ibb.co/tmcCqK9/Screenshot-2022-07-21-at-4-48-26-PM.png" alt=""/>
+  
+        <h3>
+          Installation instructions for any dependencies
+        </h3>
+        <p>
+          There are a number of dependencies for the project. One of it is
+          Tailwind CSS which designs interface of the webpage. Some of them are
+          listed below.
+        </p>
+        <h4>1. JsonWebToken </h4>
+        <p>To carry out the authentication of the users.</p>
+        <h4>2. ChartJs </h4>
+        <p>
+          A library used to draw out charts for the data used in the app.
+        </p>
+        <h4>3. Bcrypt </h4>
+        <p>For password encryption purposes.</p>
+        <p >
+          The rest of them are listed below. <li>"bcrypt": "^5.0.1"</li>
+          <li> "chart.js": "^3.8.0"</li>
+          <li> "cors": "^2.8.5"</li>
+          <li>"dotenv": "^16.0.1", </li>
+          <li>"express": "^4.18.1",</li>
+          <li>"express-validator": "^6.14.2",</li>
+          <li> "jsonwebtoken": "^8.5.1",</li>
+          <li> "mongoose": "^6.4.4",</li>
+          <li> "react": "^18.2.0",</li>
+          <li> "react-chartjs-2": "^4.3.1", </li>
+          <li>"react-dom": "^18.2.0",</li>
+          <li> "react-router-dom": "^6.3.0",</li>
+          <li> "react-scripts": "5.0.1",</li>
+          <li>"tailwindcss": "^3.1.6",</li>
+          <li> "uuid": "^8.3.2",</li>
+        </p>
+        <h3>User stories </h3>
+        <p>
+          User can use digiHealth to :
+          <li>
+            Update Logs of child's growth (eg height, weight, headCircumference)
+          </li>
+          <br>
+          <p>User can use digiHealth to :</p>
+          <li>-Register an account and login</li>
+          <li>-View child data -Update, edit and delete logs and appointments</li>
+          <li>-Add children to an existing user</li>
+        </p>
+        <h2>Wire Frames</h2>
+        <p>
+          Some of the images of the app is listed below, showing the features of
+          the app
+        </p>
+        <h4>Home Page</h4>
+        <img src="https://i.ibb.co/JCZqJ64/Screenshot-2022-07-21-at-4-54-49-PM.png" alt=""/>
+        <h4>Child Data</h4>
+        <img src="https://i.ibb.co/VD4G08n/Screenshot-2022-07-21-at-5-11-42-PM.png" alt=""/>
+        <h4>To edit the Child Data</h4>
+        <img src="https://i.ibb.co/9cXQN3G/Screenshot-2022-07-21-at-5-11-58-PM.png" alt=""/>
+        <img src="https://i.ibb.co/44zjpC1/Screenshot-2022-07-21-at-5-12-15-PM.png" alt=""/>
+        <h2>
+          Descriptions of any unsolved problems or major hurdles your team had to
+          overcome
+        </h2>
+        <p>
+          The team stretch goal was not completed there was a problem to retreive
+          the individual postcode from the data. An api
+          (https://apidocs.geoapify.com/) was found to get the coordinates based
+          on the postcode. This feature is still in development and will be
+          updated after.
+        </p>
+  
+
+</body>
+</html>
+
+<style>
+  div{
+    margin:20px;
+  }
+  img{
+    width:450px;
+    height:300px;
+  }
+  p{
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+</style>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/website.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body">
+  <div class="nav">
+    <a href="website.html"class="navbar" >HOME</a>
+    <a href="website.html#about" class="navbar">ABOUT</a>
+    <a href="website.html#skills" class="navbar">SKILLS</a>
+    <a href="website.html#projects" class="navbar">PROJECTS</a>
+    <a href="website.html#contacts" class="navbar">CONTACT</a>
+</div>
+    <div >
+        <h1 >Music Keys</h1>
+        <a
+          href="https://eugenelye.github.io/Project1/"
+          target="blank"
+        >
+          Click to browse!
+        </a>
+  
+        <h2>Description</h2>
+        <p >
+          This project is about creating a game called "Guitar Hero". It is
+          simplified version of the Guitar Hero game. This game was chosen for the
+          project as it is a game where most people will know how to play and it
+          is simple for children to play as well. The vibrant colors of the game
+          also create a feel good factor for the players.
+        </p>
+  
+        <h2 >Instructions</h2>
+        <p >
+          When the "Start Game" button is pressed, the blocks will start falling.
+        </p>
+        <p >
+          Users will have to press the associated keys shown on the screen when
+          the keys fall to the bottom of the screen.
+        </p>
+        <p >
+          When the correct key is pressed as the block is at the bottom, it will
+          register a score.
+        </p>
+        <p >
+          If the key is not pressed when the block falls beyond the bottom of the
+          screen, it will register a miss.
+        </p>
+        <p >
+          The game will end if there are more than 5 misses or the game time of 30
+          seconds are up.
+        </p>
+  
+        <h2 >Game Images</h2>
+  
+        <img
+          src="https://i.ibb.co/nLbM3np/Screenshot-2022-06-09-at-3-33-51-PM.png"
+          alt=""
+        />
+        <img
+          src="https://i.ibb.co/hLXHXKq/Screenshot-2022-06-09-at-4-03-05-PM.png"
+          alt=""
+        />
+        <img
+          src="https://i.ibb.co/s1wsbK0/Screenshot-2022-06-09-at-4-04-50-PM.png"
+          alt=""
+        />
+        <h2 >Programming Languages</h2>
+  
+        <p >
+          HTML CSS and Javascript are the programming langagues used for this
+          project.
+        </p>
+  
+        <h2 >Challenges of the Project</h2>
+        <h3 >
+          Making the rectangles falling randomly
+        </h3>
+        <p >
+          Initially, the rectangles were created randomly and condition were set
+          to make it fall again once it reaches the bottom. However this is not
+          random as the block which fall to the botom first will be generated
+          again on top, creating a standard loop. After that it was changed to
+          making rectangles in a setTimeout function so that it is generated every
+          3000/speed timing.
+        </p>
+        <h3 >
+          Making the rectangles stop falling after the time ends or misses reach a
+          certain number.
+        </h3>
+        <p >
+          I could not make the animation stop as initially, I put the function of
+          fallRect in the clear interval. After realising that it needs to be
+          asssigned to a variable, the clearInterval works. This is one of the
+          things I learned in doing this project.
+        </p>
+        <h2 >
+          Known Problems of The Game
+        </h2>
+        <p >
+          The score and the game over are shown in an alert function. It can be
+          improved by showing it as a pop up box of text, beautifying the score
+          and the interface of the game. The interface of the game can also be
+          improved by allowing game users to change the game time and the speed of
+          the falling blocks.
+        </p>
+      </div>
+  
+</body>
+</html>
+
+<style>
+  div{
+    margin:20px;
+  }
+  img{
+    width:450px;
+    height:300px;
+  }
+  p{
+    font-family: 'DynaPuff', cursive;
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+</style>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/website.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body">
+  <div class="nav">
+    <a href="website.html"class="navbar" >HOME</a>
+    <a href="website.html#about" class="navbar">ABOUT</a>
+    <a href="website.html#skills" class="navbar">SKILLS</a>
+    <a href="website.html#projects" class="navbar">PROJECTS</a>
+    <a href="website.html#contacts" class="navbar">CONTACT</a>
+</div>
+    <div>
+        <h1 >ShopYourHome</h1>
+        <p>
+          This project is creating a modern furniture shop App with a MERN stack.
+        </p>
+        <br>
+        <img src="https://i.ibb.co/xFCDrvL/Screenshot-2022-08-11-at-11-35-36-PM.png" alt=""/>
+        <h2>Technical Used </h2>
+        <p >
+          The app was created using MongoDB, Express, React and NodeJs, aka MERN.
+          Other libraries such as React-Router-Dom are used to navigate through
+          the app. Tailwind CSS was used to design the app.
+        </p>
+  
+        <h2>User Stories and Wireframes</h2>
+        <p>
+          This project is about creating an app called "ShopYourHome". It is a
+          modern furniture shop, which allows users to create an account and shop
+          through the items. The categories of items includes Living , Dining,
+          Kitchen, Bath and Bedroom. Users can browse through the products in
+          different categories. If they want to buy a product, they can add to
+          their cart. Upon completing the browsing, they can check out their cart
+          and the order history can be tracked through the order page.The
+          different wireframes such as the products , cart and orders page are
+          shown below.
+        </p>
+        <h3>Products</h3>
+        <img src="https://i.ibb.co/MNfd0f9/Screenshot-2022-08-11-at-11-43-05-PM.png" alt=""/>
+        <h3>Cart</h3>
+        <img src="https://i.ibb.co/J5qsGjc/Screenshot-2022-08-11-at-11-43-25-PM.png" alt=""/>
+        <h3>Orders</h3>
+        <img src="https://i.ibb.co/5sjmpL6/Screenshot-2022-08-11-at-11-43-37-PM.png" alt=""/>
+        <h2>
+          Planning and Development Process
+        </h2>
+        <h3>Setting Up of Database</h3>
+        <p>
+          There are two collections to facilitate the retrieval of data from the
+          database, furniture and users.
+        </p>
+  
+        <h3>Furniture collection</h3>
+        <p>
+          The furniture database was set up with the furniture name, price ,
+          image, description and category. This collection allows the website to
+          render the products , allowing users to buy the items. The category
+          value allows the filtering of items to be rendered on different pages
+          through Express. When users add to cart or buy the products, the
+          furnitures are added to the users collection.
+        </p>
+  
+        <img src="https://i.ibb.co/Yk7dQkd/Screenshot-2022-08-12-at-12-02-58-AM.png" alt=""/>
+        <h3>Users collection</h3>
+        <p>
+          The users collection comprises of username, password, , name, address ,
+          furniture and orders. When users add products to their cart, the
+          furniture are added to the user's furniture object. When users checkout,
+          the products in furniture are transfered to the orders object and
+          deleted from the furniture object. This data structure allows for users
+          to store items in their cart and look through their order history.
+        </p>
+        <img src="https://i.ibb.co/fQnPVpr/Screenshot-2022-08-12-at-12-03-11-AM.png" alt=""/>
+        <h3>Improvements in the future</h3>
+        <p>
+          The function below can be implemented in the future to further improve
+          the website.
+        </p>
+        <h3>Editing of Products</h3>
+        <p>
+          Users can be checked whether they are admin of the wesbite. If they are
+          admin of the websites, they can edit the product details so that the
+          products on the website can be updated.
+        </p>
+        <h3>Tally of orders</h3>
+        <p>
+          The total orders on the website for all the users can be tallied and
+          admin of the website can check the revenue gain every month.
+        </p>
+        <h3>Deleting of users</h3>
+        <p>
+          Admin of the website can also delete users account so that they cannot
+          buy any products from the website. The reason could be some of the users
+          did not pay for their products or creating nuisance to the shop.
+        </p>
+      </div>
+</body>
+</html>
+
+<style>
+  div{
+    margin:20px;
+  }
+  img{
+    width:450px;
+    height:300px;
+  }
+  p{
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+</style>

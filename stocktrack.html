@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/website.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Martian+Mono:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body">
+  <div class="nav">
+    <a href="website.html"class="navbar" >HOME</a>
+    <a href="website.html#about" class="navbar">ABOUT</a>
+    <a href="website.html#skills" class="navbar">SKILLS</a>
+    <a href="website.html#projects" class="navbar">PROJECTS</a>
+    <a href="website.html#contacts" class="navbar">CONTACT</a>
+</div>
+    <div>
+        <h1>StockTrack</h1>
+        <p>
+          This project is about creating a React App to search and track finance
+          data such as Stocks, Forex and Cryptocurrency.
+        </p>
+        <h2>Description</h2>
+        <p>
+          This project is about creating an app called "StockTrack". It allows
+          users to find real time stock, forex and crypto data from an API called
+          TwelveData and Yahoo Finance. It has a search function which allows
+          users to input the stock name, forex pair and cryptocurrency symbol in
+          their respective pages and retrieve the prices, exchange rate and the
+          cryptocurrency prices in the searched currency. It also allows the user
+          to add in their favourites to a portfolio so that they can track the
+          prices of the searched items.
+        </p>
+  
+        <h2>Technical Used</h2>
+        <p>
+          The app was created using React JS. Other libraries such as
+          React-Router-Dom and Alice Carousel was used to navigate the app and
+          show the effects of the carousell respectively.
+        </p>
+        <p >Async was used to fetch the data from the API.</p>
+        <p >
+          CSS was also used to create the background effects and beautify the data
+          rendered.
+        </p>
+  
+        <h2>Component Model</h2>
+  
+        <p>
+          Pages such as Home, Stocks, Forex, Cryptocurrency and Portfolio are used
+          to naviage around the app. The main App is used to filter the data and
+          render the results to the respective pages. StockCarousel, ForexCarousel
+          and CryptoCarousel are used to create the carousel effect on the pages.
+          NavBar is the compoenent which directs the users to the respective pages
+          with links.
+        </p>
+        <br>
+        <img
+          src="https://i.ibb.co/Bw0tVzx/Screenshot-2022-07-01-at-3-03-29-PM.png"
+          alt=""
+        />
+        <h2>User Stories </h2>
+        <h3 >Stock Function</h3>
+        <p>
+          This stock search page allows users to input the stock of the data they
+          wish to retrieve. This search input can be in the form of the name of
+          the company or the stock symbol. For example , if the user wish to
+          retrieve the stock price of Apple Inc. stock in USD, they can either
+          input 'apple' or 'aapl'. Both terms will render the result of Apple Inc.
+          stock name ,price and 24 hours percentage change.
+        </p>
+        <br>
+        <img
+          src="https://i.ibb.co/nz7NKJS/Screenshot-2022-06-30-at-8-04-34-PM.png"
+          alt=""
+        />
+  
+        <h3>Forex Function</h3>
+        <p>
+          The forex search page allows the users to search the forex data. For
+          example , users shall input SGD/EUR and they will be able to see the
+          data of the current exchange rate and the 24 hour percentage change.
+        </p>
+        <br>
+        <img
+          src="https://i.ibb.co/fxRwZ4T/Screenshot-2022-06-30-at-8-05-07-PM.png"
+          alt=""
+        />
+  
+        <h3>Crypto Function</h3>
+        <p>
+          This cryptocurrency search allows users to search the cryptocurrency
+          prices. Users shall input the cryptocurrency symbol and currency, for
+          example BTC/USD , and the BTC name , price in USD and 24 hours
+          percentage change will be rendered. Users can also search it in other
+          currencies, such as BTC/SGD to obtain the price in SGD.
+        </p>
+        <br>
+        <img
+          src="https://i.ibb.co/grCprbT/Screenshot-2022-06-30-at-8-45-28-PM.png"
+          alt=""
+        />
+  
+        <h3>Portfolio</h3>
+        <p>
+          When the stocks, forex or cryptocurrency is searched, their data can be
+          stored in the portfolio of the user by pressing the star icon. The data
+          will be stored in the My portfolio page.
+        </p>
+        <br>
+        <img
+          src="https://i.ibb.co/TMfV287/Screenshot-2022-06-30-at-8-11-00-PM.png"
+          alt=""
+        />
+  
+        <h2 >Planning and Development Process</h2>
+        <h3 >Problem-Solving Strategy</h3>
+        <h4 >Pages</h4>
+        <p >
+          Pages are set up using React-Router-Dom and used as links and
+          componenets for the purpose of this app. As the results of stocks, forex
+          and cryptocurrency are different in format (eg. prices and exchange
+          rate), it will be simpler to seperate them into different pages so that
+          each pages can render the results in the different formats. Hence 3
+          different pages are set up to render the 3 different types of financial
+          data.
+        </p>
+        <p >
+          For the inputs, it would also be simpler to set them up in the
+          respective pages as the inputs will be saved and passed into the
+          respective functions for the rendering of the data. The filtering of
+          data for all the 3 types of data are saved in the App.js as they are
+          similar. Hence saving them in App.js allows for quicker coding as the
+          functions can be duplicating. The different states are then prop into
+          different pages for mapping the data display.
+        </p>
+  
+        <h4 >Components</h4>
+        <p >
+          The Navbar component is created for the purpose of design of the
+          navigation bar and navigate users to different pages.
+        </p>
+        <p >
+          Carousell pages are set up for the rendering of major stock, forex and
+          cryptocurrency data in a carousell effect. This would allow the app to
+          look more interactive with the dynamic movement of the data.
+        </p>
+        <p >
+          The rendering of data through the API with a fixed array of input for
+          the carousel effect was more difficult to solve. In the end, forEach was
+          used to input the data into the API and mapped out the different data.
+        </p>
+        <h2 >Unsolved problems</h2>
+        <h3 >Stock Search</h3>
+  
+        <p >
+          Future improvement can be made by allowing users to change the currency
+          so that they can see the stock prices in their preferred currency
+          instead of just USD.
+        </p>
+        <p>
+          List unsolved problems which would be fixed in future iterations.
+        </p>
+        <h3 >Crypto Function</h3>
+  
+        <p >
+          The search can be improved by allowing users to search both the name or
+          the symbol to get the cryptocurrency prices data. A drop down menu can
+          also be implmented to allow users to select the closest match.
+        </p>
+  
+        <h3>Portfolio</h3>
+  
+        <p >
+          This page can be further improved by allowing users to input buy orders
+          at the current price and track their buy orders. The portfolio can allow
+          users to have a overall portfolio value data and see their profit or
+          losses on their buy orders.
+        </p>
+  
+        <h3 >API used</h3>
+  
+        <p >
+          TwelveData API (https://twelvedata.com/) - This API was used to retrieve
+          the price by inputting the symbol. For the cryptocurrency app, the name
+          and the symbol was both available in the API to display.
+        </p>
+        <br>
+        <p>
+    
+          Yahoo Finance API (https://yfapi.net) - This API was added for the
+          stocks to be searched with either the name or symbol. The API was used
+          as an autocomplete function hence it will filter out the closest matched
+          stock data with your input. Thereafter, the symbol was retrieved from
+          the data to input into the TwelveData API for data fetching.
+        </p>
+        <p >
+     
+          However, one thing to note is that the Yahoo Finance API key changes
+          everyday. The key in the codes will need to be updated.
+        </p>
+</body>
+</html>
+
+<style>
+  div{
+    margin:20px;
+  }
+  img{
+    width:450px;
+    height:300px;
+  }
+  p{
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+</style>
